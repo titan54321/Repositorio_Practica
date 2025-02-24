@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { mainModule } from 'node:process';
-import { MainComponent } from './components/main/main.component';
+import { RouterLink} from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
+import { FanyComponent } from "./components/fany/fany.component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterOutlet, RouterLink, HeaderComponent],
+  standalone: true, 
+  imports: [HeaderComponent, FanyComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
