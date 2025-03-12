@@ -15,3 +15,7 @@ jobs:
     steps:
     - name: Hello-World
       run: echo 'Hello World'
+    - name: 'tell-me-date'
+      run: date 
+    - name: 'list-dir'
+      run: ls
